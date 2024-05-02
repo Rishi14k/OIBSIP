@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1 Level-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Verdana;
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+          
+            background-image: url('back.avif');
+            background-size: cover;
+            width: 100%;
+            height: 1000px;
+            background-repeat: no-repeat;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border: none;
+            border-radius: 50%;
+
+        }
+
+        .menu {
+            display: flex;
+            position: absolute;
+            top: 40px;
+            left: 160px;
+
+        }
+
+        .menu ul li {
+            display: inline;
+            padding: 15px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            font-family: Verdana;
+
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu ul li:hover {
+            border: 2px solid rgb(220, 126, 12);
+            border-radius: 5px;
+            color: white;
+        }
+
+        .btn a {
+            position: absolute;
+            top: 45px;
+            letter-spacing: 2px;
+            right: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: orange;
+            padding: 5px 20px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+
+        .btn a:hover {
+            background-color: rgb(220, 126, 12);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .heading h1 {
+            color: white;
+            font-size: 50px;
+            text-align: left;
+            line-height: 80px;
+        }
+
+        .heading {
+            margin: 120px 50px;
+            
+        }
+
+        .heading h2 {
+            color: white;
+            letter-spacing: 3px;
+            text-align: left;
+            line-height: 80px;
+        }
+
+        .buttons {
+            font-family: Verdana;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            padding: 5px 15px;
+            cursor: pointer;
+            margin-bottom: 150px;
+        }
+
+        #bt {
+            font-size: larger;
+            border: none;
+            background-color: transparent;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
+        #bt:hover {
+            color: orange;
+        }
+
+        .buttons:hover {
+            background-color: orange;
+        }
+
+        .categories {
+            width: 100%;
+            height: 800px;
+            background-color: black;
+            color: white; 
+            display: flex;
+            margin-top: 10px;
+        }
+        .categories img {
+            height: 100%;
+            width: 40%;
+            border-radius: 10px;
+        }
+        .about{
+            text-align: justify;
+            width: 50%;
+            margin-left: 150px;
+            margin-top: 150px;
+            font-family: Verdana;
+        }
+        .about p{
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+        .about h1{
+            position: relative;
+            top: -30px;
+            font-size: 50px;
+            text-align: right;
+            border-bottom:2px dotted white;
+            letter-spacing: 8px;
+        }
+        .product{
+            width: 100%;
+            height: 1000px;
+            background-color: black;
+            color: white; 
+   
+           margin-top: 10px;
+         
+        }
+        .product h1{
+            margin-top: 5px;
+            font-size: 50px;
+            text-align: left;
+            border-bottom:2px dotted white;
+            letter-spacing: 8px;
+            position: absolute;
+            top: 1810px;
+        }
+        .item{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin:90px 180px;
+            flex-wrap: wrap;
+        }
+        .item img{
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .pbtn{
+           border: 2px dotted white;
+           border-radius: 5px;
+           text-align: center;
+           position: relative;
+           top: -40px;
+           left: 45%;
+            background-color: black;
+            color: white; 
+            padding: 5px 10px;
+            font-size: 40px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: Verdana;
+        }
+        .pbtn:hover{
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+        }
+        .copy{
+            color: #94969f;
+            text-align: center;
+            padding: 25px;
+        }
+        .copy:hover{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="logo">
+            <img src="logo1.jpg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Shop</a></li>
+                <li><a href="contact.html">About</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="contact.html">ORDER</a>
+        </div>
+
+        <div class="heading">
+            <h1>
+                Chill Vibes and</h1>
+            <h1> Dann Good Coffee</h1>
+    
+            <h2>An inspiring space to fuel your ambition and coffee that’s dann good.</h2>
+            <button class="buttons">ORDER NOW</button>
+            <button id="bt">Explore More</button>
+        </div>
+    </div>
+  
+  
+    <div class="categories">
+        <img src="aboutback.png" alt="img">
+        <div class="about">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis, asperiores suscipit delectus voluptate perferendis iste debitis distinctio iusto ratione commodi modi possimus quasi ipsam expedita nam ex quas consequuntur?
+            Consequuntur harum voluptatibus omnis? Aliquid corporis ipsum est ducimus quos quibusdam, voluptatibus, voluptates autem minima sed id exercitationem magnam enim nostrum laboriosam ex. Fuga, a iure. Harum porro magni provident.
+            Labore, laborum? Vitae aliquid praesentium obcaecati similique. Placeat ad quibusdam iure dolorum eos. Assumenda suscipit unde odit dolor quos ab excepturi, non omnis dicta magnam cupiditate molestias. Nobis, eaque ea.
+            Earum nobis, corporis quo dolorem nam placeat numquam eos officia exercitationem ipsum dolores, est reprehenderit voluptatum praesentium perferendis odio officiis, excepturi quam aut omnis odit amet. Et laborum a perferendis?
+            Recusandae doloremque commodi asperiores aliquam odit, quaerat eum blanditiis vel exercitationem alias iure? Pariatur quae tempore beatae asperiores excepturi? Quaerat ipsam similique doloribus eum dolor repellat et est, obcaecati perferendis?</p> 
+        </div> 
+    </div>
+
+    <div class="product">
+        <h1>Our Product</h1>
+        <div class="item">
+            <img src="product1.jpg" alt="img">
+            <img src="product2.jpg" alt="img">
+            <img src="product3.jpg" alt="img">
+            <img src="product4.jpg" alt="img">
+            <img src="product5.jpg" alt="img">
+            <img src="product6.jpg" alt="img">
+        </div>
+        <button class="pbtn">See All</button>
+    </div>
+    <hr>
+    <footer>
+      
+
+        <div class="copy">
+          <p>  ||  © || 2024 ||  all rights reserved || </p>
+         </div>
+    </footer>
+</body>
+
+</html>

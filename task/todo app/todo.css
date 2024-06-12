@@ -1,0 +1,53 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    text-transform: uppercase;
+    color: orangered;
+    letter-spacing: 3px;
+}
+.main1{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 15px;
+    margin-top: 15px;
+    row-gap: 15px;
+    align-items: center;
+}
+.in{
+    font-size: 20px;
+    padding:10px 5px;
+    
+}
+.btndelete{
+    padding: 10px 5px;
+    background-color: rgb(236, 59, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+    text-transform: uppercase;
+    cursor: pointer;  
+}
+#btn{
+    padding: 10px 5px;
+    background-color: rgb(71, 242, 71);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size:25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btndelete:hover{
+    background-color: rgb(106, 14, 14);
+    transform: scale(1.1);
+    transition-duration: 1.1s;
+}
+
+#btn:hover{
+    background-color:rgb(8, 82, 8);
+    transform: scale(1.1);
+    transition-duration: 1.1s;
+}

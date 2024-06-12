@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khakhra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="khakhra.css">
+</head>
+<body>
+    <div class="mainn">
+        <div class="logo">
+            <img src="mkhakhra.png" alt="logo">
+        </div>
+        <div class="menu">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Products</p>
+            <p>Quality</p>
+            <p>Enquiry</p>
+            <p>Contact Us</p>
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      
+    </div>
+
+    <div class="main">
+
+        <figure>
+
+            <div class="image">
+                <img src="slide3.webp" alt="">
+            </div>
+        
+        <div class="image">
+            <img src="slide1.webp" alt="">
+        </div>
+        
+        <div class="image">
+            <img src="slide2.webp" alt="">
+        </div>
+        
+      
+        
+        <div class="image">
+            <img src="slide4.webp" alt="">
+        </div>
+        
+        </figure>
+        
+            </div>
+
+        <div class="wrapper">
+                <div class="search">
+                    <input type="search" placeholder="Search Product Name Here..." id="search-input">
+                    <button id="search">Search</button>
+                </div>
+
+                <div id="buttons">
+                    <button class="btn-value" onclick="filterProduct('all');">All</button>
+                    <button class="btn-value" onclick="filterProduct('SadaKhakhra');">Sada Khakhra</button>
+                    <button class="btn-value" onclick="filterProduct('MasalaKhakhra');">Masala Khakhra</button>
+                    <button class="btn-value" onclick="filterProduct('FancyKhakhra');">Fancy Khakhra</button>
+                    <button class="btn-value" onclick="filterProduct('MethiKhakhra');">Methi Khakhra</button>
+                    <button class="btn-value" onclick="filterProduct('ChorafaliKhakhra');">Chorafali Khakhra</button>
+                </div>
+                <div id="products"></div>
+            </div>
+
+  
+<script src="khakhra.js"></script>
+</body>
+</html>

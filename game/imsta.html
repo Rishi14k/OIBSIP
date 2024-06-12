@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insta</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'gilroy';
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cornflowerblue;
+        }
+        .main{
+            height: 400px;
+            width: 300px;
+            background-color: white; 
+            text-align: center;
+        }
+        .main img{
+            width: 200px;
+            height: 200px;
+            margin: 10px 50px;
+            border-radius: 5px;
+        }
+        .main h1{
+            font-size: 35px;
+            margin: 10px 0px;
+            color: rgb(250, 11, 143);
+        }
+        .main h5{
+            font-size: 25px;
+            color: red;
+        }
+        .main button{
+            background-color: rgb(56, 221, 56);
+            color: #fff;
+            padding: 5px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 30px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="rasmika.jpg" alt="img">
+        <h1>Rasmika</h1>
+        <h5>Stranger</h5>
+        <div class="btn">
+            <button id="add">Add Friend</button>
+        </div>
+       
+    </div>
+    <script>
+        let friend = document.querySelector("#add");
+        let text=document.querySelector("h5");
+        let c=0;
+        friend.addEventListener("click",function(){
+            if(c==0){
+            text.innerHTML="Friend";
+            text.style.color='green';
+            friend.innerHTML='Remove Friend';
+            c=1;
+            }
+            else{
+                
+                text.innerHTML="Stranger";
+                text.style.color='red';
+                friend.innerHTML='Add Friend';
+                c=0;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.bagpage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bagitems{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     margin-top: 40px;
+     border: 1px solid rgb(235, 226, 226);
+
+     border-radius: 10px;
+}
+.bagitem{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:15px ;
+    margin-bottom: 15px;
+     border: 1px solid rgb(235, 226, 226);
+     margin-left: 55px;
+     border-radius: 10px;
+}
+.leftpart img{
+    width: 350px;
+    height:350px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.right{
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+.company{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.itemname{
+    letter-spacing: 2px;
+    color: rgb(99, 97, 97);
+    margin-top: 5px;
+}
+.priceel{
+    margin-top: 5px;
+}
+.cprice{
+    font-weight: bolder;
+    font-size: larger;
+}
+.dprice{
+    color:rgb(168, 160, 160);
+    margin-left: 3px;
+}
+.return{
+    margin-top: 25px;
+}
+.return-time{
+    font-size: larger;
+    font-weight: bold;
+}
+.delivery{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.delivery span{
+    color:rgb(243, 23, 151);
+}
+.remove{
+    position: absolute;
+    right: 930px;
+    font: 500;
+    font-size: 30px;
+    cursor: pointer;
+}
+.bagSummary{
+    width: 35%;
+    border: 1px solid rgb(239, 233, 233);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    margin-left: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 120px;
+    left: 950px;
+}
+.head{
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: rgb(243, 23, 151);
+    margin-left: 15px;
+
+}
+.tag,.dis,.con,.total{
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.total{
+    border-top: 1px solid rgb(239, 233, 233);
+    color: deeppink;
+}
+.value{
+    position: relative;
+    left: 465px;
+    bottom: 20px;
+}
+.tt{
+    font-weight: bolder;
+    font-size: larger;
+}
+.btn1{
+    margin-top: 15px;
+    margin-left: 38px;
+}
+.btn1 button{
+    padding: 5px 200px;
+    background-color: rgb(243, 23, 151);
+    color: #fff;
+    border-radius: 5px;
+    font-size: larger;
+    letter-spacing: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+.btn1 button:hover{
+    background-color: rgb(101, 238, 101);
+    transform: scale(1.1);
+    transition-duration: 1.1s;
+    transition-delay: 0.5s;
+    cursor: pointer;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 7</title>
+    <style>
+        body{
+            animation: color 10s linear infinite;
+        }
+        @keyframes color{
+            0%{
+                background-color: red;
+                color: white;
+            }
+            20%{
+                background-color: green;
+                color: white;
+            }
+            40%{
+                background-color: orangered;
+                color: white;
+            }
+            60%{
+                background-color: rgb(29, 59, 168);
+                color: pink;
+            }
+            80%{
+                background-color: crimson;
+                color: white;
+            }
+            100%{
+                background-color: deeppink;
+                color:white;
+            }
+        }
+        .main{
+            width: 650px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 150px auto;
+            background:linear-gradient(pink,skyblue);
+        }
+        #display{
+            width: 450px;
+            padding: 10px;
+            text-align: right;
+      
+            font-size: 50px;
+            margin-top: 5px;
+        }
+        .clickbtn{
+            padding: 15px;
+            font-size: 40px;
+            margin: 15px;
+            cursor: pointer;
+
+        }
+        .btn{
+            margin: 15px;  
+        }
+        #total{
+            padding:5px 90px;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        #total:hover,.clickbtn:hover{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <input type="text" placeholder="0" readonly id="display"><br>
+            <div class="btn">
+                <button onclick="calculator(1)" class="clickbtn">1</button>
+                <button onclick="calculator(2)" class="clickbtn">2</button>
+                <button onclick="calculator(3)" class="clickbtn">3</button>
+                <button onclick="calculator('+')" class="clickbtn" style="background-color: orange; color:white">+</button>
+            </div>
+            <div class="btn">
+                <button onclick="calculator(4)" class="clickbtn">4</button>
+                <button onclick="calculator(5)" class="clickbtn">5</button>
+                <button onclick="calculator(6)" class="clickbtn">6</button>
+                <button onclick="calculator('-')" class="clickbtn" style="background-color: orange; color:white">-</button>
+            </div>
+            <div class="btn">
+                <button onclick="calculator(7)" class="clickbtn">7</button>
+                <button onclick="calculator(8)" class="clickbtn">8</button>
+                <button onclick="calculator(9)" class="clickbtn">9</button>
+                <button onclick="calculator('*')" class="clickbtn" style="background-color: orange; color:white">*</button>
+            </div>
+            <div class="btn">
+                <button onclick="calculator('.')" class="clickbtn">.</button>
+                <button onclick="calculator(0)" class="clickbtn">0</button>
+                <button onclick="remove()" class="clickbtn">C</button>
+                <button onclick="calculator('/')" class="clickbtn" style="background-color:orange; color:white">/</button>
+            </div>
+            <div class="eual">
+                <button onclick="result()" id="total">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let output = document.querySelector('#display');
+        let number = '';
+        function calculator(num){
+            number+=num;
+            output.value=number;
+           
+        }
+        function result(){
+            output.value=eval(number);
+            number='';
+           
+        }
+        function remove(){
+          output.value='';
+          number='';
+        }
+    </script>
+</body>
+</html>

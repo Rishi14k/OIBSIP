@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+     
+        .main{
+            border: 5px solid red;
+            width: 50%;
+            margin: 50px auto;
+        }
+        .main h2{
+            font-size: 60px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(220, 126, 12);
+            border-bottom: 2px solid rgb(179, 179, 179);
+        }
+        .main p{
+            font-size: 40px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+        #icon{
+            font-size: 50px;
+            border: 1px solid;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        #msg{
+            font-size: 50px;
+            margin-left: 15px;
+            padding: 3px;
+        }
+        .btn{
+            padding: 5px;
+            font-size: 55px;
+            margin: 25px 15px;
+            border-radius: 5px;
+            background: linear-gradient(to top, pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%);
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition-duration: 3s;
+        }
+        .btn:hover{
+            background: linear-gradient(to right, pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%);
+            color: rgb(242, 8, 8);
+        }
+        #holder{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Pass the Message</h2>
+        <p>Enter the Message</p>
+        <i class="fa-solid fa-message" id="icon"></i><input type="text" id="msg" placeholder="Type Your Message"><br>
+        <button  onclick="message()"class="btn">Submit</button> 
+        <p id="holder"></p>
+    </div>
+    <script>
+        let mess = document.querySelector('#msg');
+        mess.addEventListener('keydown',function(event){
+            if(event.key == "Enter"){
+                message();
+            }
+        });
+
+
+    function message(){
+     document.querySelector('#holder').innerHTML=mess.value;
+     mess.value="";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 5</title>
+    <style>
+        .main{
+            width: 550px;
+            height: 350px;
+            border: 3px solid black;
+            border-radius: 3px;
+            margin: 250px auto;
+        }
+        .main h1{
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(220, 126, 12);
+            border-bottom: 2px solid rgb(179, 179, 179);
+        }
+        #cnt{
+            font-size: 80px;
+            margin-top: -20px;
+            color: orangered;
+        }
+        #in,#de{
+            padding: 8px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-size: 35px;
+            margin-left: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition-duration: 2s;
+        }
+        #in:hover{
+            background-color: green;
+            color: white;
+        }
+        #de:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Counter</h1>
+        <h1 id="cnt">0</h1>
+        <button onclick="counter(1)" id="in">Increment</button>
+        <button onclick="counter(-1)" id="de">Decrement</button>
+    </div>
+    <script>
+        let count=0;
+        function counter(num){
+            count+=num;
+            document.querySelector('#cnt').innerHTML=count;
+        }
+
+            
+        
+    </script>
+</body>
+</html>

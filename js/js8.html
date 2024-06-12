@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .main{
+            width: 500px;
+            height: 400px;
+            margin: 150px auto;
+        }
+        .main h1{
+            text-align: center;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: chocolate;
+        }
+        .write{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #icon{
+           font-size: 40px;
+           color: red;
+           margin-left: 15px;  
+           cursor: pointer;
+        }
+        #show{
+            font-size: 40px;
+            border: none;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-left: 25px;
+        }
+        .allItem{
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 40px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="contain">
+            <h1>
+                Grocery List
+            </h1>
+            <div class="write">
+            <i class="fa-solid fa-trash" id="icon"></i>
+            <input type="text" placeholder="Enter the list" id="show">
+        </div>
+        <div class="allItem"></div>
+        </div>
+    </div>
+
+    <script>
+        const contain=document.querySelector('.contain')[0];
+        const symbol = document.querySelector('#icon');
+        const input = document.querySelector('#show');
+        const allItem = document.querySelector('.allItem');
+        
+        symbol.addEventListener('click', function(){
+            allItem.innerHTML='';
+        })
+        input.addEventListener('keydown', function(event){
+            if(event.key == "Enter"){
+                addAll();
+            }
+        })
+        function addAll(){
+            let h2= document.createElement('h2');
+            h2.innerHTML = "-" + input.value;
+
+            h2.addEventListener('click', function(){
+                h2.style.textDecoration='line-through';
+            })
+
+            allItem.insertAdjacentElement("beforeend", h2);
+            input.value='';
+        }
+    </script>
+</body>
+</html>

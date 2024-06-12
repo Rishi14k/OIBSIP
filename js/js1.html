@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js project 1</title>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border:none;
+            background-color: antiquewhite;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(131, 218, 131);
+            color: white;
+            transition: 1s;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()" class="btn">
+    Change Color
+    </button>
+    <script>
+        let index=0;
+        function changeColor(){
+            let color = ['red', 'green', 'blue','yellow','darken','black','skyblue','orange','pink','purple'];
+            document.body.style.backgroundColor = color[index++];
+            if(index>color.length-1){
+                index=0;
+            }
+        }
+    </script>
+</body>
+</html>

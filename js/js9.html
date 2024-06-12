@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>JS Project 9</title>
+<style>
+.cal{
+    background: linear-gradient(to right, pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%);
+    width: 80%;
+    margin:150px auto;
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid #ccc;
+}
+.cal button{
+    font-size: 35px;
+}
+.cal input{
+    font-size: 35px;
+}
+.cal select{
+    font-size: 35px;
+}
+.cal h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    line-height: 100px;
+    color: rgb(255, 68, 0);
+}
+#btn{
+    font-size: 35px;
+    margin-top: 35px;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: green;
+    color: wheat;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <h1 style="text-align: center;">Tip Calculator</h1>
+            <br>
+            <label for="Bill">Bill Amount</label>
+            <button><i class="fa-solid fa-dollar-sign"></i></button>
+            <input id="amt"type="number" placeholder="Enter the bill Amount">
+            <br><br>
+            <label for="Guest">Number of Guest</label>
+            <button><i class="fa-solid fa-person"></i></button>
+            <input id="guest" type="number" placeholder="Enter the Number of Guest">
+            <br><br>
+            <label for="services">Service Quality</label>
+            <select  id="qulity">
+                <option disabled selected value="0">Chooes...</option>
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - It was ok</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+            <div style="text-align: center;">
+                <button onclick="cal()" id="btn">Calculate</button>
+            </div>
+        </div>
+        <div class="tipAmt"></div>
+    </div>
+
+    <script>
+        const amount = document.querySelector('#amt');
+        const guests = document.querySelector('guest');
+        const qulity = document.querySelector('#qulity');
+        const tipAmt = document.querySelector('.tipAmt');
+
+        function cal(){
+            let tip = ((amount.value * qulity.value) /(guests.value)).toFixed(2);
+            amount.value = '';
+            guests.value = '';
+            qulity.value = '';
+            tipAmt.innerHTML = `<h1>Tip Amount: ${tip}</h1>`;
+        }
+    
+    </script>
+</body>
+</html>

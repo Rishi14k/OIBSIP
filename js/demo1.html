@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+<STYLE>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #result-container {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+</STYLE>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-btn">Next</button>
+        <div id="result-container"></div>
+    </div>
+<script>
+    const quizData = [
+    {
+        question: 'What is the capital of France?',
+        options: ['Paris', 'London', 'Rome', 'Berlin'],
+        answer: 'Paris'
+    },
+    {
+        question: 'Which planet is known as the Red Planet?',
+        options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
+        answer: 'Mars'
+    },
+    {
+        question: 'Who wrote "To Kill a Mockingbird"?',
+        options: ['Harper Lee', 'J.K. Rowling', 'Stephen King', 'Ernest Hemingway'],
+        answer: 'Harper Lee'
+    }
+];
+
+const questionContainer = document.getElementById('question-container');
+const optionsContainer = document.getElementById('options-container');
+const resultContainer = document.getElementById('result-container');
+const nextButton = document.getElementById('next-btn');
+
+let currentQuestion = 0;
+let score = 0;
+
+function displayQuestion() {
+    const question = quizData[currentQuestion];
+    questionContainer.textContent = question.question;
+    optionsContainer.innerHTML = '';
+
+    question.options.forEach(option => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.classList.add('option-btn');
+        button.addEventListener('click', () => checkAnswer(option));
+        optionsContainer.appendChild(button);
+    });
+}
+
+function checkAnswer(selectedOption) {
+    const question = quizData[currentQuestion];
+    if (selectedOption === question.answer) {
+        score++;
+    }
+    nextQuestion();
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+        displayQuestion();
+    } else {
+        showResult();
+    }
+}
+
+function showResult() {
+    questionContainer.textContent = '';
+    optionsContainer.textContent = '';
+    resultContainer.textContent = `You scored ${score} out of ${quizData.length}.`;
+    nextButton.style.display = 'none';
+}
+
+displayQuestion();
+nextButton.addEventListener('click', nextQuestion);
+
+</script>
+</body>
+</html>

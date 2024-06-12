@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS project 6</title>
+    <style>
+        body{
+            background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+        }
+        .main{
+            width: 550px;
+            height: 650px;
+            border: 3px solid black;
+            border-radius: 3px;
+            margin: 150px auto;
+            text-align: center;
+            font-size: 40px;
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            animation: time 7s linear infinite;
+            
+        }
+        @keyframes time{
+            0%{
+                background-color: red;
+                color: white;
+            }
+            20%{
+                background-color: green;
+                color: white;
+            }
+            40%{
+                background-color: orangered;
+                color: white;
+            }
+            60%{
+                background-color: rgb(29, 59, 168);
+                color: pink;
+            }
+            80%{
+                background-color: crimson;
+                color: white;
+            }
+            100%{
+                background-color: deeppink;
+                color:white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="time">
+            <h1 id="day">MON</h1>
+            <h1 id="hour"><span>HOUR</span></h1>
+            <h1 id="minute">02 min</h1>
+            <h1 id="ampm">PM</h1>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", calculateTime);
+        function calculateTime(){
+            let date = new Date();
+            let daynumber = date.getDay();
+            let hour = date.getHours();
+            let minute = date.getMinutes();
+            let ampm = hour>12 ? 'PM' : 'AM';
+            let dayName = ["Sun", "Mon", "Tue", "Wed", "Thu","Fri", "Sat"];
+
+            hour = hour % 12;
+            
+            hour = hour <10 ? '0'+hour : hour;
+            minute = minute <10 ? '0'+minute : minute;
+
+            document.querySelector('#day').innerHTML = dayName[daynumber];
+            document.querySelector('#hour').innerHTML = hour;
+            document.querySelector('#minute').innerHTML = minute;
+            document.querySelector('#ampm').innerHTML = ampm;
+
+            setTimeout(calculateTime,200);
+
+        }
+
+    </script>
+</body>
+</html>

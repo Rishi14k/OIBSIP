@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .res {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Quiz</h1>
+        <div class="question"></div>
+        <div class="ans"></div>
+        <button id="next">Next</button>
+        <div class="res"></div>
+    </div>
+
+    <script>
+        window.onload = diplayQuestion;
+        const data = [
+            {
+                question: 'What is the capital of France?',
+                options: ['Paris', 'London', 'Rome', 'Berlin'],
+                answer: 'Paris'
+            },
+            {
+                question: 'Which one is markup language ?',
+                options: ['CSS', 'HTML', 'JS', 'C++'],
+                answer: 'HTML'
+            },
+            {
+                question: 'Do you have mind ?',
+                options: ['Yes', 'No', 'Both', 'Mental'],
+                answer: 'Both'
+            },
+        ];
+
+        const que = document.querySelector('.question');
+        const ans = document.querySelector('.ans');
+        const next = document.querySelector('#next');
+        const res = document.querySelector('.res');
+
+        let c_question = 0;
+        let score = 0;
+
+        function diplayQuestion() {
+            const q = data[c_question];
+            que.textContent = q.question;
+            ans.innerHTML = '';
+
+            q.options.forEach(option => {
+                const button = document.createElement('button');
+                button.textContent =  option;
+                button.classList.add('btn');
+                button.addEventListener('click', () => check(option) );
+                ans.appendChild(button);
+            })
+        }
+
+        function check(selectedOption){
+            const q = data[c_question];
+            if(selectedOption === q.answer){
+                    score ++;
+            }
+            nextQuestion();
+        }
+
+        function nextQuestion(){
+            c_question++;
+            if(c_question < data.length){
+                displayQuestion();
+            }else{
+                showRes();
+            }
+        }
+
+        function showRes(){
+            que.textContent = '';
+            ans.textContent = '';
+            res.textContent = `Your score is ${score} out of ${data.length}`;
+            next.style.display='none';
+        }
+        
+        next.addEventListener('click',nextQuestion);
+
+    </script>
+</body>
+
+</html>

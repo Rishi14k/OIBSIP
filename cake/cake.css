@@ -1,0 +1,1097 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.mainheader {
+    width: 100%;
+    height: 84px;
+    /* background-color: rgb(196, 115, 10); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-left: 94px;
+
+}
+
+.icon i {
+    margin: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.icon i:hover {
+    color: #e5bf4a;
+}
+
+.logo h1 {
+    font-family: Harrington;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #e5bf4a;
+}
+
+.call {
+    margin-right: 55px;
+
+}
+
+.call input {
+    background-color: black;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin: 3px;
+    color: #e5bf4a;
+    border: 1px solid #e5bf4a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.call button {
+    background-color: black;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin: 3px;
+    color: #e5bf4a;
+    border: 1px solid #e5bf4a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    margin-top: 15px;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    transition: all 1.5s;
+}
+
+.navbar a:hover {
+    color: #e5bf4a;
+    border-bottom: 1px solid #e5bf4a;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+    height: 650px;
+    background-image: url('finalbg.avif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+
+.main p {
+    font-size: 4rem;
+    position: relative;
+    top: 180px;
+    left: 55px;
+    line-height: 85px;
+    font-family: Kristen ITC;
+}
+
+#btn {
+    font-size: 3rem;
+    position: relative;
+    top: 190px;
+    left: 55px;
+    padding: 15px;
+    font-family: Kristen ITC;
+    border-radius: 10px;
+    border: none;
+    background-color: #e5bf4a;
+    margin-top: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: black;
+    border: 1px solid #e5bf4a;
+    color: white;
+}
+
+.first {
+    width: 100%;
+    height: 800px;
+
+}
+
+.f {
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.f h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.f h2 span {
+    color: #e5bf4a;
+    font-family: Harrington;
+    letter-spacing: 5px;
+}
+
+.s {
+    width: 100%;
+    height: 650px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.s1 {
+    width: 50%;
+    height: 500px;
+    margin-top: 85px;
+
+}
+
+.s1 h1 {
+    font-size: 3rem;
+    margin-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.s1 p {
+    text-align: justify;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.s2 {
+    width: 35%;
+    height: 600px;
+    margin-top: 20px;
+
+}
+
+.s2 img {
+    width: 450px;
+
+}
+.productHead{
+    width: 100%;
+    height: 60px;
+}
+#op {
+    text-align: center;
+    font-family: Harrington;
+    color: #e5bf4a;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.p1 {
+    width: 20%;
+    margin-left: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+.p1 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.p1 h2 {
+    margin-top: 10px;
+}
+
+.p1 h4 {
+    margin-top: 10px;
+}
+
+.p1 p {
+    margin-top: 7px;
+    font-size: larger;
+}
+
+.p1 button {
+    padding: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.p1 button:hover {
+    background-color: #e5bf4a;
+    transition: all 1s;
+
+}
+
+.more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.more button {
+    padding: 15px;
+    font-size: 1.5rem;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.more button:hover {
+    background-color: #e5bf4a;
+    transition: all 1s;
+}
+
+.video {
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wc {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Harrington;
+    color: #e5bf4a;
+    letter-spacing: 5px;
+}
+
+.review {
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.c1 {
+    width: 40%;
+    height: 190px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    border: 1px solid #e5bf4a;
+    padding: 20px;
+
+}
+
+.c1 h4 {
+    font-size: 1.5rem;
+}
+
+.c1 p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#rating {
+    margin-top: 7px;
+    font-size: 1rem;
+    color: #e5bf4a;
+}
+.contacthead{
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.f {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social {
+    margin-left: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+
+}
+
+.social a:hover {
+    color: #e5bf4a;
+    transition: all 1s;
+}
+
+.f p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.f p:hover {
+    color: #e5bf4a;
+    transition: all 1s;
+}
+
+.contact {
+    width: 80%;
+    height: 450px;
+    border: 1px solid #e5bf4a;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 400px;
+    margin: 20px;
+
+}
+
+.contact form input {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #e5bf4a;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact form textarea {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e5bf4a;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submit {
+    width: 20%;
+    margin: auto;
+    font-size: 2rem;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #e5bf4a;
+    transition: all 1s;
+}
+
+#ctc {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Harrington;
+    color: #e5bf4a;
+    margin-top: 15px;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.submitClick {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e5bf4a;
+}
+
+#gotoTop {
+    /* display: none; Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#gotoTop:hover {
+    background-color: #e5bf4a;
+}
+
+/* CSS for Desktops and Large Screens */
+@media only screen and (min-width: 1200px) {
+    .s1 {
+        width: 50%;
+        height: auto;
+        margin-top: 85px;
+      
+    
+    }
+    
+    .s1 h1 {
+        font-size: 2rem;
+        margin-left: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .s1 p {
+        text-align: justify;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    .s2 {
+        width: 35%;
+        height: auto;
+        margin-top: 20px;
+    
+    }
+    
+    .s2 img {
+        width: 350px;
+    
+    }
+    .icon {
+        margin-left: 40px;
+    }
+
+    .call {
+        margin-right: 55px;
+    }
+
+    .main p {
+        font-size: 4rem;
+        top: 180px;
+        left: 55px;
+        line-height: 85px;
+    }
+
+    #btn {
+        font-size: 3rem;
+        top: 190px;
+        left: 55px;
+        padding: 15px;
+    }
+
+    .s {
+        margin-top: 50px;
+    }
+    .s1 {
+        width: 50%;
+        margin-top: 85px;
+    }
+
+    .s2 img {
+        margin-top: 105px;
+        width: 650px;
+    }
+
+    .product {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+    .p1{
+        width: 80%;
+      
+    }
+    .p1 img{
+        width: 100%;
+    }
+    .more {
+        margin-top: 60px;
+    }
+
+    .video {
+        margin-top: 80px;
+    }
+
+    .review {
+        margin-top: 80px;
+    }
+
+    .contact {
+        width: 80%;
+        height: 450px;
+        margin-top: 45px;
+    }
+    #submit{
+        font-size: 1.5rem;
+    }
+}
+
+/* CSS for Medium Screens */
+@media only screen and (max-width: 1199px) {
+    .icon {
+        margin-left: 20px;
+    }
+
+    .call {
+        margin-right: 110px;
+    }
+
+    .main p {
+        font-size: 3rem;
+        top: 150px;
+        left: 105px;
+        line-height: 75px;
+    }
+
+    #btn {
+        font-size: 2.5rem;
+        top: 160px;
+        left: 100px;
+        padding: 12px;
+    }
+
+    .s {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s1 {
+        width: 80%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .s2 img {
+        width: 100%;
+        margin-top: 30px;
+        display: none;
+    }
+
+    .product .p1 {
+        width: 45%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .more button {
+        padding: 12px;
+        font-size: 1.3rem;
+    }
+    #submit{
+        font-size: 1.2rem;
+    }
+    .f{
+        width: 80%;
+        display: flex;
+    }
+}
+
+/* CSS for Small Screens */
+@media only screen and (max-width: 991px) {
+    .icon {
+        margin-left: 10px;
+    }
+
+    .call {
+        margin-right: 60px;
+    }
+    #search{
+        font-size: 1.5rem;
+        width: 50%;
+    }
+
+    .main p {
+        font-size: 2.5rem;
+        top: 120px;
+        left: 35px;
+        line-height: 60px;
+    }
+
+    #btn {
+        font-size: 2rem;
+        top: 130px;
+        left: 35px;
+        padding: 10px;
+    }
+
+    .s {
+        flex-direction: column;
+        align-items: center;
+    }
+    .f h2{
+        font-size: 2.3rem;
+        text-align: center;
+        margin-left: 70px;
+    }
+
+    .s1 {
+        width: 75%;
+        margin-left: -65px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .s1 p{
+        font-size: 2rem;
+    }
+    .s2 img {
+        width: 100%;
+        margin-top: 20px;
+        display: none;
+    }
+    #op{
+        margin-top: 30px;
+    }
+    .product .p1 {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .more button {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .review {
+        width: 100%;
+        height: 1050px;
+       
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    .c1 {
+        width: 60%;
+        height: 220px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+        border: 1px solid #e5bf4a;
+        padding: 20px;
+    
+    }
+    .contact {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #submit {
+        width: 30%;
+    }
+    .f{
+        display: flex;
+        flex-direction: column;
+    }
+    
+#gotoTop {
+    /* display: none; Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 200px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+}
+
+/* CSS for Extra Small Screens */
+@media only screen and (max-width: 576px) {
+    .icon {
+        margin-left: 15px;
+        width: 10%;
+    }
+
+    .call {
+        margin-right: 10px;
+    }
+    #search{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar a{
+        font-size: 1rem;
+    }
+    .main p {
+        font-size: 2rem;
+        top: 100px;
+        left: 25px;
+        line-height: 50px;
+    }
+    .f h2{
+        font-size: 1.5rem;
+        margin-left: -65px;
+    }
+    #btn {
+        font-size: 1.8rem;
+        top: 110px;
+        left: 25px;
+        padding: 8px;
+    }
+    .s1{
+        height: 600px;
+    }
+    .s1 p{
+        font-size: 1.5rem;
+    }
+    .product .p1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .more button {
+        padding: 8px;
+        font-size: 1rem;
+    }
+    iframe{
+        width: 70%;
+    }
+    #wc{
+        font-size: 1.5rem;
+    }
+    .review {
+        height: 1200px;
+    }
+    .review .c1 {
+        width: 80%;
+        
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contact {
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+        border: none;
+    }
+    .contact input{
+        font-size: 1rem;
+        width: 80%;
+    }
+    #submit{
+        width: 40%;
+
+    }
+    .f{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/* CSS for Small Screens (up to 340px) */
+@media only screen and (max-width: 340px) {
+    .mainheader {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        margin-left: 5px;
+        display: none;
+    }
+    .call {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .call input {
+        width: 100%;
+        max-width: 200px;
+        margin: 5px;
+    }
+    .call button {
+        width: 100%;
+        max-width: 80px;
+        margin: 5px;
+    }
+    .logo h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar a {
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .main p {
+        font-size: 1.8rem;
+        top: 80px;
+        left: 20px;
+        line-height: 40px;
+    }
+    #btn {
+        font-size: 1.6rem;
+        top: 90px;
+        left: 20px;
+        padding: 6px;
+    }
+    .f h2{
+        margin-left: 20px;
+    }
+    .s {
+        flex-direction: column;
+        align-items: center;
+    }
+    .s1 {
+        width: 100%;
+        height:1260px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .s1 h1 {
+        font-size: 1.5rem;
+        color: #e5bf4a;
+        margin-left: 40px;
+    }
+    .s1 p {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
+    #op{
+        margin-top: 80px;
+    }
+    .s2 img {
+        display: none;
+    }
+    .product img{
+        width: 100%;
+    }
+    .product .p1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .more button {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    .video{
+        margin-top: -40px;
+    }
+    .review{
+        height: fit-content;
+    }
+    .review .c1 {
+        width: 100%;
+        height: 290px;
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+    .contact {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        border: none;
+    }
+    .video iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .social a {
+        padding: 8px;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 5px;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 90%;
+        font-size: large;
+        margin: 8px 0;
+    }
+}
+
+/* CSS for Medium Screens (up to 440px) */
+@media only screen and (min-width: 341px) and (max-width: 440px) {
+    .mainheader {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        margin-left: 10px;
+    }
+    .call {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .call input {
+        width: 100%;
+        max-width: 250px;
+        margin: 5px;
+    }
+    .call button {
+        width: 100%;
+        max-width: 100px;
+        margin: 5px;
+    }
+    .logo h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .main p {
+        font-size: 1.8rem;
+        top: 80px;
+        left: 20px;
+        line-height: 40px;
+    }
+    #btn {
+        font-size: 1.6rem;
+        top: 90px;
+        left: 20px;
+        padding: 6px;
+    }
+    .s {
+        flex-direction: column;
+        align-items: center;
+    }
+    .s1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .s1 h1 {
+        font-size: 2rem;
+    }
+    .s1 p {
+        font-size: 1.4rem;
+        margin-top: 15px;
+    }
+    .s2 img {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .product .p1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .more button {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    .review .c1 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+    .contact {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .video iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .social a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 5px;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Products</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="cake.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="logo">
+               <a href="index.html" id="logo"> <h1>Cake Shop</h1></a>
+            </div>
+           
+        </div>
+    </header>
+
+    <div class="main" data-aos="fade-left">
+        <p data-aos="zoom-in">Celebrating Sweetness<br> with our Delicious Cake <i
+                class="fa-regular fa-face-grin-hearts" id="iconcolor"></i></p>
+
+    </div>
+    <div class="cate">
+        <button data-is="All">All</button>
+        <button data-is="Birthday Cake">Birthday Cake</button>
+        <button data-is="Eggless Cake">Eggless Cake</button>
+        <button data-is="Chocolate Cake">Chocolate Cake</button>
+        <button data-is="Truffle Cake">Truffle Cake</button>
+        <button data-is="Fresh Fruits Cake">Fresh Fruits Cake</button>
+        <button data-is="Cake With Flowers">Cake With Flowers</button>
+        <div class="call">
+            <input type="search" placeholder="Search Here.." id="productSearch">
+            <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <main>
+        <div class="product" id="pro">
+        
+    
+        </div>
+    </main>
+
+
+
+    <button id="gotoTop" title="go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 80,
+            duration: 1300,
+        });
+
+    </script>
+
+    <script src="product.js"></script>
+</body>
+
+</html>
